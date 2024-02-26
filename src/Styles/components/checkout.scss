@@ -1,0 +1,151 @@
+.checkout {
+    
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    &__heading {
+      margin-top: 2.5rem;
+      margin-left: 3rem;
+      color: $text-grey;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      font-size: xx-large;
+    }
+  
+      &__form {
+          background-color: white;
+          border: 2px solid $text-primary;
+          width: 50%;
+          padding: 1rem 1.5rem;
+          margin: 2.5rem;
+          margin-top: 1rem;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+      }
+  
+      &__subheading {
+        font-size: 1.25rem;
+        font-style: bold;
+        color: $text-primary;
+  
+        &:not(:first-child) {
+          padding-top: 1.25rem;
+        }
+      }
+  
+      &__label {
+          display: block;
+          font-size: 1rem;
+          font-style: bold;
+          color: $text-grey;
+          text-transform: uppercase;
+          padding-top: 0.75rem;
+      }
+  
+      &__input {
+        border: 1px solid $text-primary;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        margin: 0.3rem;
+        &:hover{
+            background-color: azure;
+        }
+      }
+  
+      &__select {
+        border: 1px solid $text-primary;
+        padding: 0.25rem 0.5rem;
+  
+        select > option {
+          font-size: 0.875rem;
+        }
+        &:hover{
+            background: azure;
+        }
+      }
+  
+      &__btn-confirm {
+         background-color: $text-primary;
+         border: 1px solid $text-primary;
+         padding-left: 1.25rem;
+         padding: 0.5rem 0.75rem;
+         font-size: 0.75rem;
+         text-transform: uppercase;
+         color: white;
+         font-style: bold;
+         margin-top: 1.5rem;
+         display: block;
+  
+          &:hover {
+              background-color: lighten(#292B83, 10);
+              cursor: pointer;
+          }
+  
+          &:disabled {
+            cursor: not-allowed;
+          }
+      }
+  
+      &__summary {
+        margin-top: 1.5rem;
+        border: 2px solid $text-primary;
+        width: 40%;
+        padding: 1.5rem 2rem;
+        height: max-content;
+        align-self: center;
+        background-color: lightgrey;
+  
+        h4 {
+          font-style: bold;
+          color: $text-primary;
+        }
+      }
+
+      &__summary-total{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        font-size: larger;
+      }
+  
+      &__summary-details {
+        // @apply flex my-3;
+        display: flex;
+        margin: 0.75rem;
+      }
+  
+      &__summary-img {
+         width: 7rem;
+         height: 7rem;
+         border: 1px solid $text-primary;
+         margin-right: 0.75rem;
+         object-fit: cover;
+      }
+  
+      &__summary-name {
+        color: $text-primary;
+      }
+  
+      &__summary-value {
+        margin-left: auto;
+      }
+  
+      &__summary-price {
+        align-content: center;
+        justify-content: center;
+        
+
+  
+        span {
+          font-style: bold;
+        }
+      }
+  }
